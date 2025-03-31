@@ -12,24 +12,79 @@
             <div class="header">
                 <h1>Income & Expense</h1>
             </div>
+            <hr>
+            <div class="saldo-box">
+                <div class="saldo-text">
+                    <small>Jumlah Saldo</small>
+                </div>
+                <span id="saldo-value">0</span>
+            </div>
             <div class="form-box">
-                <div class="form-item">
-                    <input type="text" placeholder="Masukkan Nama transaksi">
+                <div class="form-box-item">
+                    <div class="form-item">
+                        <input id="nama" type="text" placeholder="Masukkan Nama transaksi">
+                    </div>
+                    <div class="form-item">
+                        <input id="saldo" type="number" placeholder="Masukkan Saldo">
+                    </div>
                 </div>
-                <div class="form-item">
-                    <input type="number" placeholder="Masukkan Saldo">
-                </div>
-                <div class="form-button">
-                    <button id="btnIncome">Income</button>
-                    <button id="btnExpense">Expense</button>
+                <div class="form-box-button">
+                    <div class="form-button">
+                        <button id="btnIncome">Income</button>
+                    </div>
+                    <div class="form-button">
+                        <button id="btnExpense">Expense</button>
+                    </div>
                 </div>
             </div>
             <div class="transaction-box">
                 <div class="transaction-item">
-                    <p>Income</p>
+                    <div class="transaction-heading">
+                        <p>Income</p>
+                    </div>
+                    <div class="transaction-table">
+                        <table border="1" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Nama Transaksi</th>
+                                    <th>Saldo</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tBody-inc">
+                                <!-- <tr>
+                                    <td>1</td>
+                                    <td>Gaji</td>
+                                    <td>Rp. 5.000.000</td>
+                                </tr> -->
+                            </tbody>
+
+                        </table>
+                    </div>
                 </div>
                 <div class="transaction-item">
-                    <p>Expense</p>
+                    <div class="transaction-heading">
+                        <p>Expense</p>
+                    </div>
+                    <div class="transaction-table">
+                        <table border="1" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Nama Transaksi</th>
+                                    <th>Saldo</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tBody-exp">
+                                <!-- <tr>
+                                    <td>1</td>
+                                    <td>Gaji</td>
+                                    <td>Rp. 5.000.000</td>
+                                </tr> -->
+                            </tbody>
+
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

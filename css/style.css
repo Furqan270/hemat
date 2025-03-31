@@ -15,12 +15,97 @@ body{
 }
 .container-item{
     width: 75%;
-    height: 75vh;
+    height: 105vh;
     border: 1px solid #ccc;
     padding: 8px;
+    border-radius: 16px;
+}
+
+.header {
+    text-align: center;
+    padding: 15px;
+}
+.form-box{
+    width : 100%;
+    display: flex;
+   flex-direction: column;
+   margin-top: 16px;
+}
+.form-box-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-item{
+    width: 50%;
+    padding: 8px;
+}
+.form-item input {
+    width: 100%;
+    padding: 8px 16px;
+}
+.form-box-button{
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-button{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-button button{
+    width: 25%;
+    padding: 8px 16px;
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
+}
+#btnIncome{ 
+    background-color: green;
+    color: white;
+}
+#btnExpense{
+    background-color: red;
+    color: white;
+}
+.form-button button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.transaction-box{
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.transaction-item{
+    width: 50%;
+    padding: 8px;
+    text-align: center;
+}
+.transaction-heading{
+    margin-bottom: 16px;
+}
+.transaction-table{
+    width: 100%;
+}
+.transaction-table table{
+    width: 100%;
+}
+th,td {
+    padding: 8px;
+}
+.saldo-box{
+    width: 100%;
+    text-align: center;
+}
+.saldo-box span {
+    font-size: 64px;
 }
